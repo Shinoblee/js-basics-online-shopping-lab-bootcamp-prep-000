@@ -38,6 +38,12 @@ let totalCost = 0;
   return totalCost;
 }
 
+function test(item){
+  for (let i = 0; i<getCart().length; i++){
+    console.log(getCart()[i]);
+  }
+}
+
 function removeFromCart(item) {
   for(let i = 0, l = getCart().length; i<l; i++){
     if(getCart()[i].itemName === item){
