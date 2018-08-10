@@ -43,7 +43,6 @@ function test(item){
     if(getCart()[i].itemName === item){
       cart.splice(i,1);
     }
-    console.log('That item is not in your cart.');
   }
 }
 
