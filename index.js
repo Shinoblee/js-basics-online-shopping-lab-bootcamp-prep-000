@@ -39,6 +39,7 @@ let totalCost = 0;
 }
 
 function removeFromCart(item) {
+  let indexToRemove = cart.indexOf(item)
   for(let i = 0, l = cart.length; i<l; i++){
     if(cart[l].itemName === item){
       cart[l].splice(item);
