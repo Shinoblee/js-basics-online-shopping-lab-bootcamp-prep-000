@@ -39,6 +39,7 @@ let totalCost = 0;
 }
 
 function removeFromCart(item) {
+  console.log(getCart().length)
   for(let i = 0, l = getCart().length; i<l; i++){
     if(getCart()[l].itemName === item){
       cart.splice(l,1);
