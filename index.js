@@ -39,7 +39,13 @@ let totalCost = 0;
 }
 
 function removeFromCart(item) {
-  
+  for(let i = 0, l = cart.length; i<l; i++){
+    if(cart[l] === item){
+      cart[l].splice(item);
+      return cart;
+    }
+    return "That item is not in your cart";
+  }
 }
 
 function placeOrder(cardNumber) {
