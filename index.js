@@ -38,9 +38,13 @@ let totalCost = 0;
   return totalCost;
 }
 
-function test(){
+function test(item){
   for (let i = 0; i<getCart().length; i++){
-    console.log(getCart()[i].itemName);
+    if(getCart()[i].itemName === item){
+      console.log(getCart()[i].itemName);
+    }else{
+    console.log('No');
+    }
   }
 }
 
