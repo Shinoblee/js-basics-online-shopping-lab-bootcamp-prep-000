@@ -40,7 +40,7 @@ let totalCost = 0;
 
 function test(){
   for (let i = 0; i<getCart().length; i++){
-    console.log(getCart()[i]);
+    console.log(getCart()[i].itemName);
   }
 }
 
