@@ -38,7 +38,7 @@ let totalCost = 0;
   return totalCost;
 }
 
-function test(item){
+function test(){
   for (let i = 0; i<getCart().length; i++){
     console.log(getCart()[i]);
   }
