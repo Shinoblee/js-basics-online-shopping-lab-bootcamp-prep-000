@@ -47,13 +47,11 @@ function test(item){
   }
 }
 
-function removeFromCart(item) {
-  for(let i = 0, l = getCart().length; i<l; i++){
+function removeFromCart(item){
+  for (let i = 0; i<getCart().length; i++){
     if(getCart()[i].itemName === item){
-      cart.splice(i,1);
-      return cart;
-    }else{
-      return "That item is not in your cart";  
+    cart.splice(i,1);
+    return cart;
     }
   }
 }
