@@ -39,11 +39,11 @@ let totalCost = 0;
 }
 
 function removeFromCart(item) {
-  let indexToRemove = getcart().indexOf(item)
+  let indexToRemove = getCart().indexOf(item)
   for(let i = 0, l = cart.length; i<l; i++){
-    if(cart[l].itemName === item){
-      cart[l].splice(indexToRemove,1);
-      return cart;
+    if(getCart().itemName === item){
+      getCart().splice(indexToRemove,1);
+      return getcart();
     }else{
       return "That item is not in your cart";  
     }
