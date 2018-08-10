@@ -39,7 +39,7 @@ let totalCost = 0;
 }
 
 function test(item){
-  for (let i = 0, l = getCart().length; i===(l-1); i++){
+  for (let i = 0; i<getCart().length; i++){
     if(getCart()[i].itemName === item){
      return cart.splice(i,1);
     }
