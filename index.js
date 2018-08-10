@@ -42,6 +42,8 @@ function test(item){
   for (let i = 0, l = getCart().length; i===(l-1); i++){
     if(getCart()[i].itemName === item){
       cart.splice(i,1);
+    }else{
+     console.log('That item is not in your cart.') 
     }
   }
 }
